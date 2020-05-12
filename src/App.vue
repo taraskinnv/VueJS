@@ -1,29 +1,12 @@
 <template>
   <div id="app">
     <h1>List</h1>
-    <!--
-    <sqrt v-bind:a="a1"></sqrt>
-    <testFetch></testFetch>
-    -->
-    <create_poll />
+    <hr />
+    <router-view />
   </div>
 </template>
 
-<script>
-import testFetch from "@/components/testFetch";
-import create_poll from "@/components/create_poll";
-export default {
-  name: "App",
-  data() {
-    return { a1: 5 };
-  },
 
-  components: {
-    testFetch,
-    create_poll
-  }
-};
-</script>
 
 <style>
 #app {
