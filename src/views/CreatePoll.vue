@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>List</h1>
+    <a href="/">Home</a>
     <!--
     <testFetch></testFetch>
     -->
