@@ -22,13 +22,14 @@ export default new Router({
         {
             path: '/createPoll',
             component: CreatePoll
-        },
-        {
-            //надо закончить получение всех опросов с базы
-            path: '/getPoll',
-            component: getPoll
         }
-
+        /*,
+                {
+                    //надо закончить получение всех опросов с базы
+                    path: '/getPoll',
+                    component: getPoll
+                }
+        */
 
     ]
 })

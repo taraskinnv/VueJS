@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>List</h1>
-    <a href="/">Home</a>
+    <router-link to="/">Home</router-link>
     <!--
     <testFetch></testFetch>
     -->
