@@ -2,15 +2,16 @@
   <div>
     <h1>List</h1>
     <router-link to="/">Home</router-link>
-    <!--
-    <testFetch></testFetch>
-    -->
+
     <create_poll />
+
+    <!-- <pollFetch></pollFetch>
+      
+    -->
   </div>
 </template>
 
 <script>
-import testFetch from "@/components/testFetch";
 import create_poll from "@/components/create_poll";
 export default {
   name: "App",
@@ -19,7 +20,6 @@ export default {
   },
 
   components: {
-    testFetch,
     create_poll
   }
 };

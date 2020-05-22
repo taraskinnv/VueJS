@@ -17,11 +17,11 @@ export default {
       console.log("onSubmit", this.answer);
       if (this.answer.trim()) {
         let newAnswer = {
-         id:Date.now(),
-          answer: this.answer
-        }
-        this.$emit('add-answer',newAnswer)
-        this.answer=""
+          id: Date.now(),
+          answerAnswer: this.answer
+        };
+        this.$emit("add-answer", newAnswer);
+        this.answer = "";
       }
     }
   }
