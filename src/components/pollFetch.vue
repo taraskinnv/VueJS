@@ -24,6 +24,8 @@ export default {
       const res = await fetch("https://localhost:5001/api/Poll");
       const data = await res.json();
       this.polls = data;
+      console.log(this.polls);
+      
     }
   },
   components: {

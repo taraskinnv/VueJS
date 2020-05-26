@@ -18,7 +18,7 @@ export default {
       if (this.answer.trim()) {
         let newAnswer = {
           id: Date.now(),
-          answerAnswer: this.answer
+          answer: this.answer
         };
         this.$emit("add-answer", newAnswer);
         this.answer = "";
