@@ -1,14 +1,19 @@
 <template>
   <div>
-    <div>{{p.question}}</div>
-    <div>{{p.answers[0].answer}}</div>
-    <div>{{p.answers[1].answer}}</div>
-    <div>{{p.answers[2].answer}}</div>
+    <div>{{poll.question}}</div>
+    <!--
+          
+    -->
+    <viewAnswer v-for="answer of poll.answers" v-bind:answer="answer" />
   </div>
 </template>
 
 <script>
+import viewAnswer from "@/components/viewAnswer";
 export default {
-  props: ["p"]
+  props: ["poll"],
+  components: {
+    viewAnswer
+  }
 };
 </script>

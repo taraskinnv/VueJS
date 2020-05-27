@@ -7,7 +7,7 @@
       
     -->
 
-    <poll v-for="p of polls" v-bind:p="p" />
+    <poll v-for="poll of polls" v-bind:poll="poll" />
   </div>
 </template>
 
@@ -25,7 +25,6 @@ export default {
       const data = await res.json();
       this.polls = data;
       console.log(this.polls);
-      
     }
   },
   components: {
