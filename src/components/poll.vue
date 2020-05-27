@@ -5,6 +5,7 @@
           
     -->
     <viewAnswer v-for="answer of poll.answers" v-bind:answer="answer" />
+    <button v-on:click="post">post</button>
   </div>
 </template>
 
